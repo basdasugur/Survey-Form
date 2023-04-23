@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <!-- The Header Element Start -->
+    <header>
+        <h1>freeCodeCamp Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platfrom</p>
+    </header>
+    <!-- The Header Element End -->
+
+
+    <!-- The Main Part Start -->
+
+    <main>
+        <!-- Form Start -->
+        <form action="#">
+            <!-- Input Name -->
+            <section id="name">
+                <label for="name">Name</label> <br>
+                <input class="input name" type="text" name="name" placeholder="Enter your name" required>
+            </section>
+            <!--Input Email-->
+            <section id="email">
+                <label for="email">Email</label> <br>
+                <input class="input email" type="email" name="email" placeholder="Enter your Email" required>
+            </section>
+            <!--Input Age-->
+            <section id="age">
+                <label for="age">Age (optional)</label> <br>
+                <input class="input age" type="number" name="age" placeholder="Age" min="1" max="100">
+            </section>
+            <!--1-Select Role Start-->
+            <section id="role">
+                <label for="role">Which option best describes your current role?</label> <br>
+                <select name="role" id="">
+                    <option value="">Select current role</option>
+                    <option value="">Student</option>
+                    <option value="">Full Time Job</option>
+                    <option value="">Full Time Learner</option>
+                    <option value="">Prefer not to say</option>
+                    <option value="">Other</option>
+                </select>
+            </section>
+            <!--1-Select Role End-->
+
+            <!--Input Radio Start-->
+            <section id="recommend">
+                <label for="recommend">Would you recommend freeCodeCamp to a friend?</label> <br>
+                <input type="radio" name="recommend">
+                <label for="Definitely">Definitely</label> <br>
+                <input type="radio" name="recommend" value="Definitely">
+                <label for="Maybe">Maybe</label> <br>
+                <input type="radio" name="recommend" value="Maybe">
+                <label for="recommend">Not Sure</label> <br>
+            </section>
+            <!--Input Radio End-->
+
+
+            <!--2-Select Feature Start-->
+            <section id="feature">
+                <label for="feature">What is your favorite feature of freeCodeCamp?</label> <br>
+                <select name="feature" id="">
+                    <option value="">Select an option</option>
+                    <option value="">Challenges</option>
+                    <option value="">Projects</option>
+                    <option value="">Community</option>
+                    <option value="">Open Source</option>
+                </select>
+            </section>
+            <!--2-Select Feature End-->
+
+            <!--Checkbox Start-->
+            <section id="improved">
+                <label for="improve">What would you like to see improved? (Check all that apply)</label> <br>
+                <input type="checkbox" name="front-end">
+                <label for="">Front-end Projects</label> <br>
+                <input type="checkbox" name="back-end">
+                <label for="">Back-end Projects</label> <br>
+                <input type="checkbox" name="data">
+                <label for="">Data Visualization</label> <br>
+                <input type="checkbox" name="challenges">
+                <label for="">Challenges</label> <br>
+                <input type="checkbox" name="opensource">
+                <label for="">Open Source Community</label> <br>
+                <input type="checkbox" name="rooms">
+                <label for="">Gitter help rooms</label> <br>
+                <input type="checkbox" name="videos">
+                <label for="">Videos</label> <br>
+                <input type="checkbox" name="meetups">
+                <label for="">City Meetups</label> <br>
+                <input type="checkbox" name="wiki">
+                <label for="">Wiki</label> <br>
+                <input type="checkbox" name="Forum">
+                <label for="">Forum</label> <br>
+                <input type="checkbox" name="courses">
+                <label for="">Additional Courses</label> <br>
+            </section>
+            <!--Checkbox End-->
+
+            <!--Textarea Start-->
+            <label for="">Any Comments or suggestions?</label> <br>
+            <textarea class="input textarea" placeholder="Enter your comment here..." cols="30" rows="10"></textarea>
+            <br>
+            <!--Textarea End-->
+
+            <!--Submit Button-->
+            <button type="submit">Submit</button>
+
+        </form>
+        <!-- Form End -->
+
+    </main>
+    <!-- The Main Part End -->
+
+    <!--Footer Start-->
+    <footer>
+        <h5>Created by Uğur BAŞDAŞ</h5>
+    </footer>
+    <!--Footer End-->
+
+
+</body>
+
+</html>
